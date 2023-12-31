@@ -1,6 +1,7 @@
 /*some nesseccery rules first*/
 html {
     box-sizing: border-box;
+    font-size: 0.8rem;
 }
 
 *, *::after, *::before {
@@ -9,20 +10,24 @@ html {
 
 body {
     font-family: "Space Grotesk",Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    background: rgb(82,0,143);
-    background: radial-gradient(circle, rgba(82,0,143,1) 0%, rgba(83,53,106,1) 100%);
+    background: rgb(46,0,80);
+    background: radial-gradient(circle, rgba(46,0,80,1) 0%, rgba(27,16,36,1) 100%);
     margin: 0;
     padding: 0;
 }
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #fff;
     cursor: pointer;
 }
 
+.nav_header_1 a:hover {
+    text-decoration: underline;
+}
+
 a:hover {
-    color: #363974;
+    text-underline-offset: 2.5px;
 }
 
 ul {
@@ -34,19 +39,24 @@ ul {
 /* header */
 
 header {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
     color: #62778e;
+}
+
+.logo_header {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
 }
 
 .nav_header_1 {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
-    height: 80px;
+    height: 120px;
     align-items: center;
     letter-spacing: 0.05em;
-    font-size: 15px;
     font-weight: 400;
 }
 
@@ -70,6 +80,19 @@ header {
     padding: 0 10px 0 35px;
 }
 
+
+.left_header_2 {
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+.nav_header_2 a {
+    color: rgb(19, 0, 114);
+}
+  
 .ul_header_2 {
     display: flex;
     align-items: center;
@@ -77,9 +100,13 @@ header {
     font-size: 15px;
 }
 
+.ul_header_2 a:hover {
+    text-decoration: underline;
+}
+
 .button_1 {
-    background: rgb(42,165,254);
-    background: linear-gradient(90deg, rgba(42,165,254,1) 0%, rgba(39,158,219,1) 85%);
+    background: rgb(0,49,99);
+    background: linear-gradient(90deg, rgba(0,49,99,1) 0%, rgba(17,0,210,1) 100%);
     border: none;
     color: #fff;
     border-radius: 10px;
@@ -89,6 +116,6 @@ header {
 }
 
 .button_1:hover {
-    background: rgb(88,134,255);
-    background: linear-gradient(90deg, rgba(88,134,255,1) 0%, rgba(68,187,249,1) 0%);
+    background: rgb(0,77,158);
+    background: linear-gradient(90deg, rgba(0,77,158,1) 0%, rgba(17,0,210,1) 100%);
 }
