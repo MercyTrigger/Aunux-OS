@@ -9,7 +9,8 @@ html {
 
 body {
     font-family: "Space Grotesk",Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    background-color: #f4f6f9;
+    background: rgb(82,0,143);
+    background: radial-gradient(circle, rgba(82,0,143,1) 0%, rgba(83,53,106,1) 100%);
     margin: 0;
     padding: 0;
 }
