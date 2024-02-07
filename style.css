@@ -24,10 +24,13 @@ h2 {
     letter-spacing: -1.8px;
 }
 
+h4 { 
+    margin: 0;
+}
+
 body {
     background-color: rgb(245,247,250);
     color: #123354;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -147,28 +150,47 @@ header {
 
 .pro {
     display: flex;
-    border: 2px solid white;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 15px;
-    backdrop-filter: blur(80px);
-    width: 330px;
+    width: 563px;
+    justify-content: center;
     height: 30px;
     align-items: center;
-    gap: 15px;
+    gap: 7px;
+    background-color: rgba(18,51,84,.1);
 }
 
+.pro:hover {
+    background-color: rgba(18,51,84,.15);
+}
+
+.pro .span_p:hover {
+    text-decoration: underline;
+    text-underline-offset: 1px;
+}
+
+.pro .span_p {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.span_p {
+    color: rgb(18,51,98);
+}
 
 .new_header {
+    font-family: Inter,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif,"Noto Color Emoji","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     display: flex;
-    border: 2px solid;
     border-radius: 180px;
     height: 20px;
-    width: 63px;
+    width: 50px;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    font-size: 15px;
-    margin-left: 10px;
+    font-size: 12px;
+    letter-spacing: .08em;
+    background-color: rgb(18,51,84);
+    color: rgb(233,255,255);
 }
 
 .pro::after {
@@ -177,24 +199,40 @@ header {
     background-image: url('./images /icons8-greater-than-64.png');
     background-size: contain;
     border-radius: 5px;
+    background-repeat: no-repeat;
     height: 20px;
     width: 20px;
+    transition: margin-left .5s;
 }
 
-h4 { 
-    margin: 0;
+.pro:hover::after {
+    margin-left: 7px;
+    gap: 0px;
 }
 
 .main_header {
-    font-size: 40px;
-    line-height: 50px;
-    background: rgb(0,6,164);
-    background: linear-gradient(8deg, rgba(0,6,164,1) 0%, rgba(55,255,199,1) 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.main_header h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main, .main_sub  {
+    font-size: 80px;
+    letter-spacing: -1.8px;
+    font-style: italic;
+}
+
+.main_sub {
+    color: rgb(18,51,84);
 }
 
 .mess {
+    color: rgb(18,51,84);
     font-size: 60px;
 }
 
@@ -208,7 +246,7 @@ h4 {
 }
 
 .div_one {
-    width: 650px;
+    width: 628px;
     text-align: center;
     line-height: 33px;
 }
@@ -262,6 +300,7 @@ h4 {
 .feature {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .h2_container {
@@ -308,6 +347,10 @@ h4 {
     content: '';
 }
 
+.feature_center_img {
+    overflow-x: hidden;
+}
+
 .less_animation::after {
     background: rgb(245,247,250);
     width: 66%;
@@ -344,7 +387,10 @@ h4 {
 /*---------------------------------*/
 .floating_pc {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .infinite_pc img {
@@ -387,5 +433,25 @@ h4 {
     margin-bottom: 25px;
 }
 
+.old_pc {
+    width: 1260px;
+    height: 800px;
+}
+
+.old_pc_container {
+    background-image: url("/home/mercytrigger/Desktop/CSS_practice/Aunux-OS/images /old-pc-background.png");
+    height: 600px;
+    width: 600px;
+    background-size: contain;
+}
+
+.old_pc_container img {
+    position: relative;
+    height: 348px;
+    width: 456px;
+    top: 110px;
+    left: 75px;
+    border-radius: 7%;
+}
 
 
