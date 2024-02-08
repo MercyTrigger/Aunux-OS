@@ -436,6 +436,8 @@ header {
 .old_pc {
     width: 1260px;
     height: 800px;
+    display: flex;
+    margin-top: 100px
 }
 
 .old_pc_container {
@@ -454,4 +456,35 @@ header {
     border-radius: 7%;
 }
 
+.old_pc_discription {
+    text-align: center;
+    width: 550px;
+    /* margin-top: 75px; */
+}
 
+.old_pc_discription h2 {
+    margin-top: 75px;
+    margin-bottom: 0;
+}
+
+.white_back {
+    background-color: rgb(253,254,254);
+    height: 175px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.old_pc_discription blockquote address {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.old_pc_discription blockquote p {
+    opacity: .6;
+    font-style: italic;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+.old_pc_discription blockquote address a {
+    margin-left: auto;
+}
